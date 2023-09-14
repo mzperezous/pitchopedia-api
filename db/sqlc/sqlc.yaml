@@ -8,5 +8,5 @@ sql:
         package: "lahman"
         out: "../../db/lahman"
     database:
-      uri: "postgresql://mzperezous:Warwick!10@pitchopedia.cmjqwfyya16u.us-east-1.rds.amazonaws.com:5432/postgres"
+      uri: "${PG_URI}"
  
