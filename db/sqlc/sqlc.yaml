@@ -1,0 +1,12 @@
+version: "2"
+sql:
+  - engine: "postgresql"
+    queries: "lahman/query.sql"
+    schema: "lahman/schema.sql"
+    gen:
+      go: 
+        package: "lahman"
+        out: "../../db/lahman"
+    database:
+      uri: "postgresql://mzperezous:Warwick!10@pitchopedia.cmjqwfyya16u.us-east-1.rds.amazonaws.com:5432/postgres"
+ 
