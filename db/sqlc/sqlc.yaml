@@ -9,4 +9,12 @@ sql:
         out: "../../db/lahman"
     database:
       uri: "${PG_URI}"
- 
+  - engine: "postgresql"
+    queries: "retrosheet/query.sql"
+    schema: "retrosheet/schema.sql"
+    gen:
+      go: 
+        package: "retrosheet"
+        out: "../../db/retrosheet"
+    database:
+      uri: "${PG_URI}" 
